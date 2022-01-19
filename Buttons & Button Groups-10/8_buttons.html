@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons & Button Group</title>
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/2856961e0a.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    
+
+            <h2 class="display-4 text-center mb-4">Buttons & Button Groups</h2 class="display-4 text-center">
+               
+                    <!-- BUTTONS  -->
+
+                <div class="container">
+                    <button class="btn btn-primary" type="button">Primary</button>
+                    <button class="btn btn-secondary" type="button">Secondary</button>
+                    <button class="btn btn-success" type="button">Success</button>
+                    <button class="btn btn-info" type="button">Info </button>
+                    <button class="btn btn-warning" type="button">Warning</button>
+                    <button class="btn btn-danger" type="button">Danger</button>
+                    <button class="btn btn-link" type="button">Link</button>
+
+
+
+                    <br><br>
+
+                    <!-- BUTTON TAGS -->
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
+                    <button class="btn btn-success" type="button" >Button</button>
+                    <input class="btn btn-warning" type="button" value="input">
+                    <input class="btn btn-danger" type="submit" value="Submit">
+                    <input class="btn btn-warning" type="button" value="Reset">
+
+
+                    <br><br>
+
+                    <!-- OUTLINE BUTTONS -->
+
+                    <button class="btn btn-outline-primary" type="button">Primary</button>
+                    <button class="btn btn-outline-secondary" type="button">Secondary</button>
+                    <button class="btn btn-outline-success" type="button">Success</button>
+                    <button class="btn btn-outline-info" type="button">Info</button>
+                    <button class="btn btn-outline-warning" type="button">Warning</button>
+                    <button class="btn btn-outline-danger" type="button">Danger</button>
+
+                    <br><br>
+
+                    <!-- BUTTON SIZES -->
+
+                      <button class="btn btn-primary btn-lg" type="button"><i class="far fa-user me-1 "></i>Large button</button> &nbsp;
+                     
+
+                      <button class="btn btn-info btn-sm" type="button">Small Button</button>
+
+                      <br><br>
+                                 
+                      <!-- BLOCK BUTTONS -->
+                   <button class="btn btn-success btn-block" type="button">Block level button</button> <!--does not support in bootstrap5-->
+                        <br><br>
+
+                   <div class="d-grid gap-2"> <!--block level buttons in bootstrap 5-->
+                    <button class="btn btn-primary" type="button">Button</button>
+                    <button class="btn btn-primary" type="button">Button</button>
+                  </div>
+
+                   <br><br><br>
+                         
+                              <!-- STATES       -->
+
+                   <button class="btn btn-danger" type="button">Regular Button</button>
+                   <button class="btn btn-danger active" type="button">Active Button</button>
+                   <button class="btn btn-danger disabled" type="button" >Disabled Button</button>
+
+                   <br><br><br>
+                         <!-- TOGGLE STATES -->
+                         <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+                         <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+                         <button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Disabled toggle button</button>
+
+                         <br><br><br>
+
+                         <!-- BUTTON DROPDOWNS -->
+                         <div class="dropdown ">
+                             <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">My Dropdown</button>
+
+                             <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="#">Link One</a>
+                                 <a class="dropdown-item" href="#">Link Two</a>
+                                 <a class="dropdown-item" href="#">Link Three</a>
+                             </div>
+
+                         </div>
+                         <br><br><br>
+
+                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            
+                          <!-- in bootstrap-5 -->
+                            <div class="btn-group" role="group">
+                              <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                              </ul>
+                            </div>
+                          </div>
+<br><br><br><br>
+                         <!-- SPLIT DROPDOWN -->
+                         <div class="btn-group">
+                             <button class="btn btn-primary" type="button">My Button</button>
+                             <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" type="button">
+                                 <span class="sr-only">Toggle Dropdown</span>
+                             </button>
+                             <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="#">Link One</a>
+                                 <a class="dropdown-item" href="#">Link Two</a>
+                                 <a class="dropdown-item" href="#">Link Three</a>
+                                 <div class="dropdown-divider"></div>
+                                 <a class="dropdown-item" href="#">Link Four</a>
+                             </div>
+                         </div>
+
+                         <br><br><br>
+
+                         <!-- BUTTON GROUPS -->
+                         <div class="btn-group">
+                           <button class="btn btn-secondary" type="button">Left</button>
+                           <button class="btn btn-primary" type="button">Middle</button>
+                           <button class="btn btn-secondary" type="button">Right</button>
+                         </div>
+
+                         <br><br>
+
+                         <div class="btn-toolbar" role="toolbar">
+                           <div class=" btn-group me-2">
+                            <button class=" btn btn-primary" type="button">1</button>
+                            <button class=" btn btn-primary" type="button">2</button>
+                            <button class=" btn btn-primary" type="button">3</button>
+                            <button class=" btn btn-primary" type="button">4</button>
+                           </div>
+
+                           <div class="btn-group me-2">
+                            <button class=" btn btn-danger" type="button">5</button>
+                            <button class=" btn btn-danger" type="button">6</button>
+                            <button class=" btn btn-danger" type="button">7</button>
+                          </div>
+                            <div>
+                              <button class=" btn btn-danger" type="button">8</button>
+                            </div>
+
+                         </div>
+                        
+                         <br><br><br>
+
+                         <div class="btn-group-vertical">
+                           <button class="btn btn-info " type="button">Left</button>
+                           <button class="btn btn-danger " type="button">Middle</button>
+                           <button class="btn btn-info " type="button">Right</button>
+                         </div>
+                </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
